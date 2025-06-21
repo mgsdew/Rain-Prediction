@@ -10,38 +10,39 @@ Predicting heavy rainfall is a significant challenge for weather departments, di
 **Key challenges:**
 ---------------------
 
-    High variability in rainfall patterns across regions
-    
-    Economic impacts of droughts and extreme rainfall
-    
-    Traffic congestion exacerbated by rainfall (especially in Auckland)
-    
-    Need for both short-term and long-term forecasting
+High variability in rainfall patterns across regions
+
+Economic impacts of droughts and extreme rainfall
+
+Traffic congestion exacerbated by rainfall (especially in Auckland)
+
+Need for both short-term and long-term forecasting
 
 
 **Dataset**
 ------------
-    **Source:** "Rain in Australia" dataset from Kaggle (used due to lack of suitable NZ dataset with required features)
-    
-    **Time period:** 10 years (2007-2017)
-    
-    **Size:** 145,460 rows × 23 columns
-    
-    **Key features:**
-    
-    Location, date, Temperature (min/max), Rainfall (today/tomorrow), Evaporation, Sunshine, Humidity, Pressure, Cloud cover, Wind speed/direction
-    
-    **Target variable:** "RainTomorrow" (binary classification)
+**Source:** "Rain in Australia" dataset from Kaggle (used due to lack of suitable NZ dataset with required features)
+
+**Time period:** 10 years (2007-2017)
+
+**Size:** 145,460 rows × 23 columns
+
+**Key features:**
+
+Location, date, Temperature (min/max), Rainfall (today/tomorrow), Evaporation, Sunshine, Humidity, Pressure, Cloud cover, Wind speed/direction
+
+**Target variable:** "RainTomorrow" (binary classification)
 
 ![image](https://github.com/user-attachments/assets/7d138808-c6f4-4a5a-831e-7b8648becae9)
 
 **Data Preprocessing**
 ----------------------
-**Handling Imbalanced Data:** Used oversampling to balance the dataset
+**Handling Imbalanced Data:**
+Used oversampling to balance the dataset
 
-                     ** Before:** Significant imbalance in "RainTomorrow" classes
-                      
-                       **After:** Balanced distribution
+Before: Significant imbalance in "RainTomorrow" classes
+                  
+After: Balanced distribution
 
 ![image](https://github.com/user-attachments/assets/10d4166e-efe3-440b-b781-70e524adf67c)
                        
@@ -52,13 +53,14 @@ Predicting heavy rainfall is a significant challenge for weather departments, di
 ![image](https://github.com/user-attachments/assets/35a4ad1d-ded5-43d9-8d17-94886c6dd59c)
 
 
-**Feature Engineering:** Below facts need to be check during feature engineering: 
+**Feature Engineering:** 
+Below facts need to be checked during feature engineering: 
 
-                      1. Label encoding for categorical features
-                      
-                      2. Outlier detection using IQR method
-                      
-                      3. Correlation analysis to identify important features
+1. Label encoding for categorical features
+
+2. Outlier detection using IQR method
+
+3. Correlation analysis to identify important features
                       
 
 ![image](https://github.com/user-attachments/assets/df1d44c9-c8f2-491d-89ee-62c0d6510d78)
@@ -73,19 +75,19 @@ Two machine learning models were implemented and compared for this experiments w
 
 **1. Random Forest (RF)**
 
-    # Ensemble of decision trees.
-    
-    # Handles complex, non-linear relationships well and
-    
-    # Robust to outliers and missing data.
+# Ensemble of decision trees.
+
+# Handles complex, non-linear relationships well and
+
+# Robust to outliers and missing data.
 
 **2. K-Nearest Neighbors (KNN)**
 
-    # Simple, distance-based classifier.
-    
-    # Uses Manhattan distance with k=7 neighbors, and
-    
-    # Distance-based weighting.
+# Simple, distance-based classifier.
+
+# Uses Manhattan distance with k=7 neighbors, and
+
+# Distance-based weighting.
 
 
 **Results**
