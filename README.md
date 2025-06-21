@@ -22,6 +22,7 @@ Need for both short-term and long-term forecasting
 **Dataset**
 ------------
 **Source:** "Rain in Australia" dataset from Kaggle (used due to lack of suitable NZ dataset with required features)
+(https://www.kaggle.com/datasets/jsphyg/weather-dataset-rattle-package)
 
 **Time period:** 10 years (2007-2017)
 
