@@ -31,18 +31,20 @@ Need for both short-term and long-term forecasting
 
 Location, date, Temperature (min/max), Rainfall (today/tomorrow), Evaporation, Sunshine, Humidity, Pressure, Cloud cover, Wind speed/direction
 
-**Target variable:** "RainTomorrow" (binary classification)
+**Target variable:** 
+
+RainTomorrow (binary classification)
 
 ![image](https://github.com/user-attachments/assets/7d138808-c6f4-4a5a-831e-7b8648becae9)
 
 **Data Preprocessing**
 ----------------------
 **Handling Imbalanced Data:**
-Used oversampling to balance the dataset
+Used oversampling to balance the dataset: -
 
-Before: Significant imbalance in "RainTomorrow" classes
+**Before:** Significant imbalance in "RainTomorrow" classes
                   
-After: Balanced distribution
+**After:** Balanced distribution
 
 ![image](https://github.com/user-attachments/assets/10d4166e-efe3-440b-b781-70e524adf67c)
                        
@@ -69,25 +71,25 @@ Below facts need to be checked during feature engineering:
 **Methodology**
 ---------------
 
-Two machine learning models were implemented and compared for this experiments which are below:
+Two machine learning models were implemented and compared for these experiment,s which are below:
 
 ![image](https://github.com/user-attachments/assets/f8272b42-65be-46d5-b87a-4f296ad168e5)
 
 **1. Random Forest (RF)**
 
-# Ensemble of decision trees.
+Ensemble of decision trees.
 
-# Handles complex, non-linear relationships well and
+Handles complex, non-linear relationships well and
 
-# Robust to outliers and missing data.
+Robust to outliers and missing data.
 
 **2. K-Nearest Neighbors (KNN)**
 
-# Simple, distance-based classifier.
+Simple, distance-based classifier.
 
-# Uses Manhattan distance with k=7 neighbors, and
+Uses Manhattan distance with k=7 neighbors, and
 
-# Distance-based weighting.
+Distance-based weighting.
 
 
 **Results**
