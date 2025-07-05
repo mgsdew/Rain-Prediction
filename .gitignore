@@ -1,0 +1,46 @@
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Python virtual environments
+venv/
+.env/
+*.env
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Docker-related
+*.log
+*.pid
+*.tar
+*.gz
+*.bak
+*.swp
+
+# VSCode / IDE settings
+.vscode/
+.idea/
+
+# Dataset files
+*.csv
+*.zip
+*.tar.gz
+*.h5
+*.pkl
+
+# Notebook outputs (optional, to keep things clean)
+*.out
+*.ipynb~
+
+# Project-specific
+data/
+models/
+outputs/
