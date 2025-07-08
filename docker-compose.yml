@@ -1,0 +1,14 @@
+services:
+  rainfall-prediction-app:
+    build: .
+    image: rainfall-prediction-app
+    ports:
+      - "8888:8888"
+    env_file:
+      - .env
+    environment:
+      - KAGGLE_USERNAME
+      - KAGGLE_KEY
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
